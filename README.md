@@ -30,14 +30,11 @@ YouTube IFrame Player API: The project uses the YouTube IFrame Player API to emb
 
 Visibility Detection: The lazy loading functionality relies on the Intersection Observer API to detect when the video element comes into view, triggering the video load and autoplay.
 
-### Customization
+## Customization
 Modify the player's settings in script.js to suit your needs. You can adjust autoplay behavior, video start and end times, and other playback options provided by the YouTube IFrame Player API.
 
-### Browser Support
+## Browser Support
 Ensure your target browsers support the Intersection Observer API for the lazy loading feature to work correctly. For browsers that do not support this API, consider adding a polyfill or alternative loading strategy.
 
-### Contributing
+## Contributing
 Your contributions are welcome! Feel free to fork this repository, make improvements, and submit pull requests. If you have suggestions or encounter issues, please open an issue to discuss them.
-
-### License
-This project is open source and available under the MIT License.
