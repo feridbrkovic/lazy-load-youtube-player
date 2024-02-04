@@ -1,0 +1,41 @@
+.youtube-bg {
+    position: relative;
+    width: calc(100% + 24px);
+    margin-left: -12px;
+    margin-top: -24px;
+    height: 808px;
+    overflow: hidden;
+}
+.youtube-bg::before {
+    content: "";
+    display: block;
+    background: var(--primary_color);
+    background: linear-gradient(45deg, var(--primary_color_alpha) 0%, var(--secondary_color_alpha) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.youtube-bg #player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 180%; /* Adjust this between 150% and 200% */
+    min-height: 180%; /* Adjust this between 150% and 200% */
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+    .youtube-bg {
+        position: relative;
+        width: calc(100% + 16px);
+        margin-left: -8px;
+        margin-top: -20px;
+        height: 345px;
+        overflow: hidden;
+    }
+}
